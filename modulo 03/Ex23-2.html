@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            background-color: #383838;
+            top: -1px;
+        }
+        td.Num{
+            text-align: 'right';
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--Anatomia de tabelas grandes
+    table
+        CAPTION
+        THEAD
+            TR,TD,TH
+        TBODY
+            TR,TD,TH
+        TFOOT
+            TR,TD,TH
+    -->
+    <table>
+        <caption>
+            Populção das unidades federativas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+                
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São paulo</td>
+                <td Class="Num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td Class="Num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td Class="Num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td Class="Num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td Class="Num">13 020 103</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td Class="Num">29 199 308</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td Class="Num">9 557 071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td Class="Num">9 913 193</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td Class="Num">9 913 130</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td Class="Num">7 371 992</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td Class="Num">9 193 002</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td Class="Num">7 998 382</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td Class="Num">4 144 321</td>
+            </tr>
+
+            <tr>
+                <td>Espirito santo</td>
+                <td Class="Num">4 018 650</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td Class="Num">4 018 127</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="Num">5 130 200</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="Num">5 130 200</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="Num">5 130 200</td>
+            </tr>
+            <tr>
+                <td>Piaui</td>
+                <td class="Num">5 130 200</td>
+            </tr>
+            <tr>
+                <td>Destrito Federal</td>
+                <td class="Num">5 130 200</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="Num">5 130 200</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="Num">5 130 200</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="Num">3 130 200</td>
+            </tr>
+        </tbody>
+
+
+        <tfoot>
+                <th scope="row">Total de habitantes</th>
+                <td Class="Num" class="tab-color">0000</td>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloremque quidem, minus consectetur eum eos accusantium dolores ad nobis vitae qui quibusdam enim inventore. Sapiente cumque neque consequuntur aspernatur earum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusantium, iure aut alias odio a distinctio? Nisi placeat dolorem velit mollitia architecto quia eum, inventore nobis a rerum eos deserunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugit soluta sed autem neque placeat quod, in ipsa aliquam debitis est ex illum optio quas, ipsam voluptatem numquam laudantium. Itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, omnis pariatur velit officia quos illum ad soluta ullam recusandae corporis explicabo, atque obcaecati provident eius, fugiat dicta repellendus? Dolorum, earum. </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloremque quidem, minus consectetur eum eos accusantium dolores ad nobis vitae qui quibusdam enim inventore. Sapiente cumque neque consequuntur aspernatur earum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusantium, iure aut alias odio a distinctio? Nisi placeat dolorem velit mollitia architecto quia eum, inventore nobis a rerum eos deserunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugit soluta sed autem neque placeat quod, in ipsa aliquam debitis est ex illum optio quas, ipsam voluptatem numquam laudantium. Itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, omnis pariatur velit officia quos illum ad soluta ullam recusandae corporis explicabo, atque obcaecati provident eius, fugiat dicta repellendus? Dolorum, earum. </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloremque quidem, minus consectetur eum eos accusantium dolores ad nobis vitae qui quibusdam enim inventore. Sapiente cumque neque consequuntur aspernatur earum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusantium, iure aut alias odio a distinctio? Nisi placeat dolorem velit mollitia architecto quia eum, inventore nobis a rerum eos deserunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugit soluta sed autem neque placeat quod, in ipsa aliquam debitis est ex illum optio quas, ipsam voluptatem numquam laudantium. Itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, omnis pariatur velit officia quos illum ad soluta ullam recusandae corporis explicabo, atque obcaecati provident eius, fugiat dicta repellendus? Dolorum, earum. </p>
+    
+</body>
+</html>
